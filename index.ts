@@ -1,5 +1,6 @@
 import express, {Express} from 'express'
 import path from 'path'
+import 'dotenv/config'
 import router from './src/routes'
 import booksRouter from "./src/routes/books"
 
