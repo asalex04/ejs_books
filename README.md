@@ -7,7 +7,13 @@ Study task
 $ npm install
 ```
 
-### Start app
+### Start app development
 ```
 $ npm run dev
+```
+
+### Start app production
+```
+$ npm run build
+$ npm run start
 ```
