@@ -9,8 +9,8 @@ const PORT = process.env.PORT || 8000
 
 app.use(express.urlencoded({ extended: true }))
 
-app.set('view engine', 'ejs')
 app.set('views', path.resolve(__dirname, 'src', 'views'))
+app.set('view engine', 'ejs')
 
 app.use('/', router)
 app.use('/books', booksRouter)
