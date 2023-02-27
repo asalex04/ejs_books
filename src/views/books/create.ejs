@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <%- include('../partials/head') %>
+</head>
+<body class="container">
+
+<header>
+    <%- include('../partials/header') %>
+</header>
+<main>
+    <h1 class="text-center m-3"><%= title %></h1>
+    <form method="POST">
+        <div class="mb-3">
+            <label for="title" class="form-label">Название</label>
+            <input type="text"
+                   name="title"
+                   class="form-control"
+                   id="title"
+                   value="<%= books.title%>"
+            >
+        </div>
+        <div class="mb-3">
+            <label for="author" class="form-label">Автор</label>
+            <input type="text"
+                   name="author"
+                   class="form-control"
+                   id="author"
+                   value="<%= books.author%>"
+            >
+        </div>
+        <div class="mb-3">
+            <label for="desc" class="form-label">Краткое описание</label>
+            <textarea class="form-control"
+                      id="desc"
+                      name="desc"
+                      rows="3"
+            ><%= books.desc %></textarea>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-success">Сохранить</button>
+            <a type="button" class="btn btn-primary m-3" href="/books">Отмена</a>
+        </div>
+    </form>
+</main>
+</body>
+</html>
+
+
+
