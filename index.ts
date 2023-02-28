@@ -1,8 +1,8 @@
 import express, {Express} from 'express'
 import path from 'path'
 import 'dotenv/config'
-import router from './src/routes'
-import booksRouter from "./src/routes/books"
+import router from './src/routes/mainRouter'
+import booksRouter from "./src/routes/booksRouter"
 
 
 const app: Express = express()
